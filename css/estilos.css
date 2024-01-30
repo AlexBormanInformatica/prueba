@@ -1,6 +1,15 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+:root {
+    --color-primario: #632E61; 
+    --color-boton: #FF475B;   
 }
-h1 {
-    font-family: 'Epilogue', sans-serif;
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Epilogue", sans-serif;
 }
