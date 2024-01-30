@@ -1,0 +1,10 @@
+# Documentación apache acerca mod_rewrite: https://httpd.apache.org/docs/current/en/mod/mod_rewrite.html#rewritecond
+Options +FollowSymLinks -MultiViews
+
+# A rewrite engine is a component of web server software that allows you to rewrite or redirect uniform resource locators (URLs)
+RewriteEngine on
+
+#extension .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
