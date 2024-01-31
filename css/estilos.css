@@ -1,6 +1,6 @@
 :root {
-    --color-primario: #632E61; 
-    --color-boton: #FF475B;   
+  --color-primario: #632e61;
+  --color-boton: #ff475b;
 }
 
 body {
@@ -12,4 +12,153 @@ h2,
 h3,
 h4 {
   font-family: "Epilogue", sans-serif;
+}
+/* 
+.container {
+  max-width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+} */
+
+.div-envio-gratis {
+  background-color: var(--color-primario);
+  color: #ffffff;
+  font-size: 20px;
+  max-width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  min-height: 63px;
+  display: grid;
+  align-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.site-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.icono-buscar {
+  height: 50%;
+  margin: auto;
+  max-height: 20px;
+  width: 100%;
+  max-width: 20px;
+  left: 12px;
+  right: auto;
+  opacity: 0.5;
+  fill: #444;
+}
+
+.main-header {
+  position: relative;
+}
+
+.primary-header {
+  margin-top: 30px;
+  display: block;
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+}
+
+.grid-center-col-layout {
+  grid-template-columns: 1fr auto 1fr;
+  display: grid;
+  align-items: center;
+  grid-column-gap: 20px;
+  overflow-wrap: anywhere;
+}
+
+.site-header-primary-section-left {
+  flex-wrap: nowrap;
+  height: 100%;
+  min-height: 0;
+  align-items: center;
+}
+
+.input-buscar {
+  font-size: 14px;
+}
+
+.top-section {
+  background-image: url("../imagenes/background-tela.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px 0 30px;
+  position: relative;
+}
+
+.background-overlay {
+  background-color: #fff;
+  opacity: 0.78;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.heading-title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.4em;
+}
+
+.column-gap-default {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: center;
+}
+
+.inner-section {
+  padding: 20px 0 0;
+  width: 100%;
+}
+
+.section-boxed {
+  max-width: 1140px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.inner-column {
+  width: 25%;
+  padding: 10px;
+}
+
+.title-col {
+  font-size: 25px;
+  font-weight: 700;
 }
