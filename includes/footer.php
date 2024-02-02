@@ -71,12 +71,12 @@
                         <div class="footer-social-inner-wrap element-social-inner-wrap social-show-label-false social-color-type-custom social-stack-none social-element-style-filled">
                             <a href="https://www.facebook.com/Tienda-de-telas-y-fornituras-105052735558853" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style="--color: #557dbc; --background-color: transparent;" class="social-element-facebook">
                                 <span class="ahfb-svg-iconset inline-flex svg-baseline">
-                                    <img src="imagenes/facebook.svg" alt="Icono de usuario">
+                                    <img src="imagenes/facebook.svg" alt="Icono de Facebook">
                                 </span>
                             </a>
                             <a href="https://www.instagram.com/tiendatelasfornituras/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style="--color: #8a3ab9; --background-color: transparent;" class="social-element-instagram">
                                 <span class="ahfb-svg-iconset inline-flex svg-baseline">
-                                    <img src="imagenes/instagram.svg" alt="Icono de usuario">
+                                    <img src="imagenes/instagram.svg" alt="Icono de Instagram">
 
                                 </span>
                             </a>
