@@ -16,8 +16,8 @@
 
     <!--Bootstrap 5.2-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
-    <!--Slick slider-->
+
+    <!--Slick slider 1.8-->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
     <!--Estilos propios-->
@@ -26,7 +26,8 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <button onclick="topFunction()" id="toTop" title="Go to top"> <img src="imagenes/angle-up.svg" alt="Icono flecha hacia arriba"> </button>
+    <header id="header" class="site-header">
         <div class="div-envio-gratis">
             <div class="flex">
                 <p class="no-margin"> <img draggable="false" role="img" class="emoji" alt="🚚" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f69a.svg">
@@ -35,10 +36,10 @@
             </div>
         </div>
         <div class="main-header">
-            <div class="primary-header row">
+            <div class="primary-header">
                 <div class="grid-center-col-layout">
                     <div class="site-header-primary-section flex">
-                        <aside class="header-widget-area widget-area site-header-focus-item header-widget-area-inner" data-section="sidebar-widgets-header-widget-1" aria-label="Header Widget 1">
+                        <aside class="" data-section="sidebar-widgets-header-widget-1" aria-label="Header Widget 1">
                             <form role="search" action="" method="get">
                                 <div class=" mb-3">
                                     <span id="basic-addon1"><svg class="icono-buscar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 51.539 51.361" xml:space="preserve">
@@ -48,11 +49,11 @@
                                 </div>
                             </form>
                         </aside>
-                        <div class="flex">
+                        <div class="flex fg">
                         </div>
                     </div>
                     <div class="site-header-primary-section flex">
-                        <div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
+                        <div class="" data-section="title_tagline">
                             <div class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
                                 <span>
                                     <a href="<?php echo BASE_URL; ?>" rel="home">
@@ -63,7 +64,7 @@
                         </div>
                     </div>
                     <div class="site-header-primary-section flex">
-                        <div class="flex"> </div>
+                        <div class="flex fg"> </div>
                         <aside>
                             <section>
                                 <div class="d-flex align-items-center justify-content-center justify-content-sm-end">
@@ -99,7 +100,7 @@
                         </div>
                         <div class="header-account">
                             <div class="header-account-wrap">
-                                <a class="header-account-link" aria-label="Enlace del icono de la cuenta" href="/mi-cuenta/" target="_self">
+                                <a class="header-account-link" aria-label="Enlace del icono de la cuenta" href="mi-cuenta" target="_self">
                                     <img src="imagenes/user.svg" alt="Icono de usuario">
                                 </a>
                             </div>

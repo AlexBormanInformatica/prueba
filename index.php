@@ -1,9 +1,10 @@
 <?php
 require_once 'includes/config.php';
+require_once 'clases/AES.php';
 require_once 'includes/header.php';
 ?>
 
-<div class="">
+<div>
     <section class="top-section">
         <div class="background-overlay"></div>
         <div class="column-gap-default">
@@ -95,7 +96,7 @@ require_once 'includes/header.php';
     <!--PLUGIN SLICK SLIDER: https://kenwheeler.github.io/slick/-->
     <section class="section-carrusel">
         <div class="column-gap-default">
-            <div class="widget-container">
+            <div>
                 <h2 class="heading-title">Telas y tejidos recomendadas</h2>
             </div>
             <div class="slideshow-container">
@@ -281,7 +282,7 @@ require_once 'includes/header.php';
     <!--PLUGIN SLICK SLIDER: https://kenwheeler.github.io/slick/-->
     <section class="section-carrusel">
         <div class="column-gap-default">
-            <div class="widget-container">
+            <div>
                 <h2 class="heading-title">Productos Top ventas</h2>
             </div>
             <div class="slideshow-container">
@@ -449,17 +450,17 @@ require_once 'includes/header.php';
             <div class="middle-top-column">
                 <div class="middle-wrap-populated">
                     <div class="widget-heading">
-                        <div class="widget-container">
+                        <div>
                             <h2 class="heading-title middle-title color-white size-large">Quiénes somos</h2>
                         </div>
                     </div>
                     <div class="widget-heading">
-                        <div class="widget-container">
+                        <div>
                             <p class="color-white text-middle-widget">Somos una empresa de la industria textil dedicada a la fabricación, almacenamiento y suministro de telas y fornituras. </p>
                         </div>
                     </div>
                     <div class="widget-button">
-                        <div class="widget-container">
+                        <div>
                             <div class="button-container">
                                 <a class="button-white size-sm" href="">
                                     <span class="button-content-wrapper">
@@ -473,8 +474,24 @@ require_once 'includes/header.php';
             </div>
         </div>
     </section>
+    <section class="section-carrusel">
+        <div class="column-gap-default gap-max-width ">
+            <div class="widget-heading">
+                <div>
+                    <h2 class="heading-title-bottom">Tienda de telas y fornituras </h2>
+                </div>
+            </div>
+            <div>
+                <div class="widget-container">
+                    <p>Bienvenido a la<strong> tienda online de telas y fornituras textiles.</strong><br>Somos la tienda de telas online en la que podrás encontrar<strong> telas, tejidos</strong> y muchos <strong>artículos de mercería.</strong> Disponemos de herramientas y accesorios de costura para que puedas realizar cualquier trabajo de costura. En nuestra tienda puedes comprar<strong> telas online desde casa por metros</strong> y disponemos de <strong>telas de punto, polares, telas elásticas, tejidos calada, acolchados, telas softshell, impermeables y muchos tejidos más.</strong><br>También puedes encontrar muchos artículos de mercería en nuestra mercería online como <strong>cremalleras, botones, hilos, vivos, cintas elásticas, cordones, ballenas, ollados, corchetes</strong> y accesorios para cinturones. <br>Tenemos todo lo necesario para que realices tus trabajos textiles. Además de disponer de todas las herramientas textiles que necesitas también encontrarás en nuestra tienda online de telas, el embalaje que necesitas para tus productos textiles. <strong>Bolsas de plástico, embalaje para camisas, cartulinas para plegar camisas, precintos, cajas de cartón</strong> y muchos más productos.<br>¿Qué otro tipo de productos puedes comprar en nuestra tienda online?<br><b>Herramientas textiles como agujas, metros, tijeras, cortahílos, cartulinas para patrones, troqueles y prensa para colocar los corchetes</b>. Marcajes textiles como retrorreflectantes, vinilos, papel sublimación y además disponemos de maniquíes.<br>Como verás en nuestra tienda online encontrarás todo lo que necesitas para la fabricación de tus productos textiles. Tanto como si eres particular , como si te dedicas a la fabricación de uniformes de trabajo, uniformes de colegio, fabricas ropa deportiva, bolsos , etc.. esta es tu tienda online de confianza&nbsp; y especializada donde encontrarás todos los productos textiles que necesitas.</p>
+                    <p>Compra con la confianza que te ofrecemos , te garantizamos la mayor seguridad en compras con un pago seguro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <?php
 require_once 'includes/footer.php';
+require_once 'includes/scripts.php';
 ?>
