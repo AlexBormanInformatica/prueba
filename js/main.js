@@ -18,7 +18,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-console.log(window.location.pathname);
+
 if (window.location.pathname === '/' || window.location.pathname === '/index' || window.location.pathname === '/prueba/') {
     // Si es el índice, agregar la clase "master"
     document.getElementById('header').classList.add('master');

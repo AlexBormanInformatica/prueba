@@ -4,7 +4,7 @@ if (!defined('PASSWORD_BCRYPT')) {
     define('PASSWORD_DEFAULT', PASSWORD_BCRYPT);
 }
 
-Class Password {
+Class AdminPassword {
 
     public function __construct() {}
 
@@ -104,7 +104,7 @@ Class Password {
     function generate_entropy($bytes){
         $buffer = '';
         $buffer_valid = false;
-       
+        
         if (!$buffer_valid && function_exists('openssl_random_pseudo_bytes')) {
             $buffer = openssl_random_pseudo_bytes($bytes);
             if ($buffer) {

@@ -8,5 +8,4 @@
 <!--Slick slider 1.8-->
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <!--Javascript propios-->
-<script src="js/slick-slider-config.js"></script>
 <script src="js/main.js"></script>

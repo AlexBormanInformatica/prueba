@@ -13,11 +13,10 @@ class User extends Password
 
     private function get_user_hash($email)
     {
-
         try {
             $stmt = $this->_pdo->prepare('SELECT idfichaempresa, email, marcas_idMarca, password FROM fichaempresametas f
             INNER JOIN marcas_has_fichaempresametas m ON m.fichaempresametas_idfichaempresa = f.idfichaempresa
-            WHERE /*isCliente = 1 AND */ isBloqueado = 0 /*AND marcas_idMarca = 13*/ AND email = :email');
+            WHERE isBloqueado = 0 AND marcas_idMarca = 12 AND email = :email');
             $stmt->execute(array('email' => $email));
 
             return $stmt->fetchAll(PDO::FETCH_OBJ);
@@ -31,29 +30,16 @@ class User extends Password
         include('AES.php');
         $row = $this->get_user_hash($email);
         if ($row != false || $row != null) {
-            $marca13Encontrada = false; // Variable para rastrear si se encuentra la marca 13
-            $sqlPW = $sqlIdFicha = $sqlEmail = "";
-
             foreach ($row as $user) {
-                $sqlPW = $user->password;
-                $sqlIdFicha = $user->idfichaempresa;
-                $sqlEmail = $user->email;
-                // Verifica si la marca es igual a 13 en cada fila
-                if ($user->marcas_idMarca == 13) {
-                    $marca13Encontrada = true;
-                    break; // Si se encuentra la marca 13, sal del bucle
-                }
-            }
-            if ($marca13Encontrada) {
-                if (PHP_AES_Cipher::encrypt($password) ==  $sqlPW) {
-                    // require_once('../includes/config.php');
-                    $_SESSION['idfichaempresa'] =  $sqlIdFicha;
-                    $_SESSION['email'] = $sqlEmail;
+                if (PHP_AES_Cipher::encrypt($password) ==  $user->password) {
+                    $_SESSION['idfichaempresa'] =  $user->idfichaempresa;
+                    $_SESSION['email'] = $user->email;
                     $_SESSION['loggedin'] = true;
 
-                    //Busco el usuario por el email en pertex               
-                    $sql = "SELECT id FROM usuarios WHERE correo='" . $_SESSION['email'] . "'";
+                    //Busco el usuario por el email en pertex
+                    $sql = "SELECT id FROM usuarios WHERE correo=?";
                     $query = $conn->prepare($sql);
+                    $query->bindParam(1,  $email, PDO::PARAM_STR);
                     $query->execute();
                     $_SESSION['ID'] = $query->fetchColumn();
 
@@ -67,16 +53,12 @@ class User extends Password
                         $sentencia->execute();
                         $_SESSION['ID'] = $conn->lastInsertId();
                     }
-
                     return true;
                 } else {
                     echo "Contraseña incorrecta.";
                     $_SESSION['email'] = "";
                     $_SESSION['loggedin'] = false;
                 }
-            } else {
-                // No se encontró ninguna fila con la marca 13
-                echo "No estás registrado en Personalizaciones Textiles. Haz click <a target='_blank' href='https://www.textilforms.com/login.php?web=13&idioma=" . $_SESSION['idioma'] . "' class='links'>aquí</a> para poder acceder.";
             }
         } else {
             echo "Email incorrecto.";
