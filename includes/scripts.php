@@ -7,5 +7,9 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
 <!--Slick slider 1.8-->
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<!--Chart.js 4.4.1-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--DataTables 1.13-->
+<script src="https://cdn.datatables.net/v/bs5/dt-1.13.8/datatables.min.js"></script>
 <!--Javascript propios-->
 <script src="js/main.js"></script>

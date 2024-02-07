@@ -9,7 +9,7 @@ require_once 'clases/AES.php';
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="imagenes/<?= htmlspecialchars($_SESSION['nombreWeb']) ?>.ico"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico">
 
     <title>Devoluciones</title>
     <?php

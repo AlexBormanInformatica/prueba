@@ -1,0 +1,206 @@
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #fff;
+  padding-top: 20px;
+  transition: margin-left 0.5s;
+}
+
+.sidenav h2 {
+  color: #000;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #f3f3f3;
+}
+
+.sidenav.collapsed {
+  margin-left: -250px;
+}
+
+.enlaces {
+  margin-top: 20px;
+}
+
+.enlaces a.active {
+  background-color: #fff;
+  border-right: 4px solid #632e61;
+}
+
+.container-user-info {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.user-info span {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.toggle-div {
+  margin-left: 250px;
+  margin-right: auto;
+  transition: margin-left 0.5s;
+}
+
+.toggle-div.collapsed {
+  margin-left: 0;
+}
+
+.toggle-div.collapsed {
+  margin-left: 0;
+}
+
+.toggle-btn {
+  height: 30px;
+  width: 30px;
+  background-image: url("../imagenes/angle-left.svg");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-div.collapsed .toggle-btn {
+  background-image: url("../imagenes/angle-right.svg");
+}
+
+.main-content {
+  background-color: #f3f3f3;
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.5s;
+}
+
+.main-content.collapsed {
+  margin-left: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Estilos para las tarjetas */
+.dashboard-stats,
+.quick-links,
+.notifications,
+.recent-activity,
+.useful-links,
+.custom-widgets,
+.site-stats {
+  flex: 1 1 calc(33.3333% - 20px); /* Distribuir en filas de 3 con espacio entre ellas */
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Establece el ancho de las tarjetas en la primera fila */
+.dashboard-stats:nth-child(-n + 2) {
+  flex-basis: calc(50% - 20px);
+}
+
+.dashboard-stats h3,
+.quick-links h3,
+.notifications h3,
+.recent-activity h3,
+.useful-links h3,
+.custom-widgets h3,
+.site-stats h3,
+.support-help h3 {
+  color: #632e61;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* Cambiar estilo al pasar el ratón sobre las tarjetas */
+.dashboard-stats:hover,
+.quick-links:hover,
+.notifications:hover,
+.recent-activity:hover,
+.useful-links:hover,
+.custom-widgets:hover,
+.site-stats:hover,
+.support-help:hover {
+  transform: scale(1.05);
+}
+
+/* Añadir estilos específicos para el contenido dentro de cada tarjeta si es necesario */
+.dashboard-stats p,
+.quick-links a,
+.notifications p,
+.recent-activity li,
+.useful-links a,
+.custom-widgets p,
+.site-stats p,
+.support-help a {
+  color: #333333;
+}
+
+.main-content .dashboard-stats canvas {
+  width: 100% !important;
+}
+
+.main-content.collapsed .dashboard-stats canvas {
+  width: 100% !important;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.panel-usuarios,
+.panel-detalles-usuario {
+  margin-bottom: 50px;
+}
+
+.tab-content .active {
+  background-color: #fff;
+  padding: 30px;
+}
+
+/* Estilos para las tarjetas de direcciones */
+.direccion-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+  padding: 20px;
+}
+
+.direccion-card h5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.direccion-card p {
+  margin-bottom: 8px;
+}
+
+/* Estilos adicionales según sea necesario */

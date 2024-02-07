@@ -1046,13 +1046,11 @@ ul.slick-dots li.slick-active button {
 .animation-grow {
   transition-duration: 0.3s;
   transition-property: transform;
-  transform: scale(1); 
+  transform: scale(1);
 }
 
 .animation-grow:hover {
-  transform: scale(
-    1.1
-  );
+  transform: scale(1.1);
 }
 
 .image-link {
@@ -1099,31 +1097,56 @@ ul.slick-dots li.slick-active button {
   --bs-gradient: none;
 }
 
-/* .custom-checkbox input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--color-primario); 
-  background-color: #fff; 
-  border-radius: 3px;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
+.mensaje-login {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 38px;
 }
 
-.custom-checkbox input[type="checkbox"]:checked {
-  background-color: var(--color-primario);
+form.login {
+  border: 1px solid #dddddd;
+  padding: 20px;
+  margin: 2em 0;
+  text-align: left;
+  border-radius: 5px;
 }
 
-.custom-checkbox input[type="checkbox"]:checked::before {
-  content: '\2713'; 
-  font-size: 12px;
-  font-weight: 600;
-  color: #fff; 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+form.register {
+  border: 1px solid #dddddd;
+  padding: 20px;
+  margin: 2em 0;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.col-mc h2 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.required {
+  color: red;
+  font-weight: 700;
+  border: 0;
+}
+
+.contenedor-scroll {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+}
+.p-l-30 {
+  padding-left: 30px;
+}
+
+form.login label,
+form.register label {
+  line-height: 2;
+  font-weight: 700;
+  font-size: 13.5px;
+  font-size: 0.9rem;
+}

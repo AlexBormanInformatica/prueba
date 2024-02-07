@@ -23,3 +23,21 @@ if (window.location.pathname === '/' || window.location.pathname === '/index' ||
     // Si es el índice, agregar la clase "master"
     document.getElementById('header').classList.add('master');
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var currentUrl = window.location.pathname;
+
+    // Obtener todos los enlaces dentro del div de enlaces
+    var links = document.querySelectorAll('.enlaces a');
+    // Iterar sobre cada enlace
+    links.forEach(function (link) {
+        // Obtener la URL del enlace actual
+        var linkUrl = link.getAttribute('href');
+
+        // Verificar si la URL actual coincide con la URL del enlace
+        if (linkUrl === currentUrl || '/' + linkUrl === currentUrl) {
+            // Agregar la clase "active" al enlace
+            link.classList.add('active');
+        }
+    });
+});
