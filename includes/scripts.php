@@ -13,3 +13,4 @@
 <script src="https://cdn.datatables.net/v/bs5/dt-1.13.8/datatables.min.js"></script>
 <!--Javascript propios-->
 <script src="js/main.js"></script>
+<script src="js/cart.js"></script>

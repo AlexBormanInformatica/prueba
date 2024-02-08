@@ -61,9 +61,9 @@ require_once 'css.php';
                                 </div>
                             </section>
                         </aside>
-                        <div class="header-cart">
+                        <div data-bs-placement="bottom" class="header-cart d-inline-block" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="No hay productos en el carrito">
                             <div class="cart-outline">
-                                <a href="carrito" class="cart-container">
+                                <a href="cart" class="cart-container">
                                     <div class="cart-wrap">
                                         <span class="cart-info-wrap">
                                             <span class="cart-total"><span class="amount">0,00<span>€</span></span></span>

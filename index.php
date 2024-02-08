@@ -501,7 +501,21 @@ require_once 'clases/AES.php';
                 </div>
             </div>
         </section>
+
+        <!-- Modal agregar al carrito -->
+        <div class="modal fade" id="modalProduct" tabindex="-1" role="dialog" aria-labelledby="modalProduct" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <?php
     require_once 'includes/footer.php';
