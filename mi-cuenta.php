@@ -24,7 +24,7 @@ if (!$user->is_logged_in()) {
     <div class="account-container">
         <div class="primary">
             <div class="text-center">
-                <h2 class="text-start">Mi cuenta</h2>
+                <h2 class="text-start entry-title">Mi cuenta</h2>
             </div>
 
             <div class="MyAccount">

@@ -17,7 +17,7 @@ require_once 'clases/AES.php';
     ?>
 
     <div class="container">
-        <article>
+        <article class="art-responsive">
             <h1 class="entry-title">Formas de pago</h1>
             <p>Podrás pagar sin cargo adicional por nuestra parte mediante tarjeta de crédito o débito. Puedes pagar con tarjeta VISA, VISA Electrón, MasterCard, Maestro, 4B y Red 6000.</p>
             <p>Durante la realización del pago entrará a una página web segura de nuestra entidad financiera, donde se le solicitará el número de su tarjeta y la fecha de caducidad. </p>

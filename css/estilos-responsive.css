@@ -1,0 +1,258 @@
+@media only screen and (max-width: 600px) {
+}
+@media (max-width: 992px) {
+  .main-nav .dropdown .dropdown-menu {
+    text-align: center;
+    float: left !important;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-nav .dropdown .dropdown-menu {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: visibility 0.2s, opacity 0.2s,
+      transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+  }
+  .main-nav .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    color: #777;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .site-branding img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .header-account-link img {
+    width: 30px;
+    height: auto;
+  }
+
+  .nav-link.dropdown-toggle,
+  .cart-wrap,
+  .icon-shopping-cart {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 44px;
+  }
+
+  .primary {
+    margin: 0;
+  }
+
+  .MyAccount {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .MyAccount-navigation {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .MyAccount-content {
+    margin-left: 0;
+  }
+
+  .grid-center-col-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-header-primary-section:nth-child(1) {
+    order: 3;
+  }
+
+  .site-header-primary-section:nth-child(2) {
+    order: 1;
+  }
+
+  .site-header-primary-section:nth-child(3) {
+    order: 2;
+  }
+
+  .icono-buscar,
+  .input-buscar {
+    margin: auto;
+  }
+
+  .icono-buscar {
+    width: 32px;
+  }
+
+  .input-buscar {
+    width: calc(100% - 42px);
+  }
+
+  .footer-grid {
+    display: block;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+  }
+
+  .footer-grid-columns {
+    display: block;
+    padding: 0;
+    grid-template-columns: auto;
+    line-height: 1.5em;
+  }
+
+  .below-footer-grid-columns {
+    display: block;
+    padding: 0;
+    grid-template-columns: auto;
+    line-height: 1.5em;
+  }
+
+  .below-footer-section {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .social-element-facebook,
+  .social-element-instagram {
+    margin: 0 6px;
+  }
+
+  .link-legal {
+    margin: 0 8px;
+  }
+
+  .border-legal {
+    border-left: none;
+    border-right: none;
+  }
+
+  .div-envio-gratis {
+    display: none;
+  }
+
+  .inner-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mb-20 {
+    margin-bottom: 10px;
+  }
+
+  .title-col {
+    font-size: 16px;
+  }
+
+  .section-boxed {
+    flex-wrap: wrap;
+  }
+
+  .inner-section {
+    padding: 0 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .title-col {
+    font-size: 0px;
+  }
+
+  h1.heading-title,
+  h1.heading-title.qs-title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  h1.heading-title.qs-title {
+    text-align: left;
+  }
+
+  h2.heading-title {
+    font-size: 20px;
+    line-height: 1.8em;
+  }
+
+  h2.heading-title.size-medium {
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+
+  h2.heading-title.size-large {
+    font-size: 30px;
+    line-height: 1.8em;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .middle-section {
+    background-repeat: no-repeat;
+    background-size: 0px auto;
+  }
+
+  .middle-wrap-populated {
+    margin: 0;
+  }
+
+  .slideshow-container {
+    padding: 0;
+  }
+
+  footer a {
+    font-size: 15px;
+  }
+
+  .qs-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .qs-col {
+    width: 100%;
+  }
+
+  .art-responsive p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .button-text {
+    font-size: 15px;
+  }
+
+  .heading-title-sectores-size1 {
+    font-size: 25px;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+  }
+
+  .heading-title-sectores-size2,
+  .heading-title-sectores-size3 {
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+  .widget-25 {
+    width: 50%;
+  }
+
+  ul.products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

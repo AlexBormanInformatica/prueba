@@ -27,7 +27,7 @@ require_once 'clases/AES.php';
             </section>
             <section class="section-boxed mb-20">
                 <div class="column-gap-default">
-                    <div class="accordion" id="accordionFAQ">
+                    <div class="accordion element-populated" id="accordionFAQ">
                         <div class="accordion-item">
                             <p class="accordion-header" id="FAQ1">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">

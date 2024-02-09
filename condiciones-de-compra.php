@@ -17,7 +17,7 @@
         ?>
 
         <div class="container">
-            <article>
+            <article class="art-responsive">
                 <h1 class="entry-title" itemprop="headline">Condiciones de compra</h1>
                 <p>Las presentes condiciones de contratación se aplican a todas las transacciones comerciales realizadas en nuestra tienda online. Para más información sobre nosotros y sobre nuestra Política de Privacidad consulte los enlaces ubicados en el pie de página de la web. Le rogamos que lea atentamente las presentes Condiciones de Compra y nuestra Política de Privacidad antes de realizar el pedido. La realización del pedido conllevará la aceptación de todas las condiciones de compra sin excepción.</p>
 
@@ -67,7 +67,7 @@
                 <p>Si usted es una persona física y cumple los requisitos para ser considerado usuario y/o consumidor, y quiere desea ejercer su derecho de desistimiento le facilitamos aquí el formulario de desistimiento:</p>
                 <div class="widget-button">
                     <div class="button-container">
-                        <a class="button-basic" href="formularios/es/borman-desistimiento.docx" role="button">
+                        <a class="btn button-basic" href="formularios/es/borman-desistimiento.docx" role="button">
                             <span class="button-text">Formulario de desistimiento</span>
                         </a>
                     </div>

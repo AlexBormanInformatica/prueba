@@ -33,10 +33,10 @@ require_once 'css.php';
                     </div>
                     <div class="site-header-primary-section flex">
                         <div class="" data-section="title_tagline">
-                            <div class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
+                            <div class="site-branding site-identity">
                                 <span>
-                                    <a href="<?php echo BASE_URL; ?>" rel="home">
-                                        <img width="168" height="119" alt="Logo Tienda de telas y fornituras" decoding="async" data-srcset="" data-src="" data-sizes="(max-width: 168px) 100vw, 168px" class="custom-logo lazyloaded" src="imagenes/cropped-LOGO-TELAS-Y-FORNITURAS-COLOR-1-3-168x119.png" sizes="(max-width: 168px) 100vw, 168px" srcset="">
+                                    <a href="." rel="home">
+                                        <img alt="Logo Tienda de telas y fornituras" decoding="async" src="imagenes/cropped-LOGO-TELAS-Y-FORNITURAS-COLOR-1-3-168x119.png">
                                     </a>
                                 </span>
                             </div>
@@ -69,7 +69,7 @@ require_once 'css.php';
                                             <span class="cart-total"><span class="amount">0,00<span>€</span></span></span>
                                         </span>
                                         <i class="icon-shopping-cart" data-cart-total="0">
-                                            <span class="ast-icon icon-cart">
+                                            <span class="icon icon-cart">
                                                 <img src="imagenes/cart.svg" alt="Icono de carrito">
                                             </span>
                                         </i>

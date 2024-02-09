@@ -14,4 +14,5 @@
 
     <!--Estilos propios-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos-responsive.css">
     <link rel="stylesheet" href="css/admin.css">

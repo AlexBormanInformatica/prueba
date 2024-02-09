@@ -26,7 +26,7 @@ require_once 'clases/AES.php';
                     </div>
                     <section class="inner-section">
                         <div class="section-boxed">
-                            <div class="inner-column col">
+                            <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="/productos/tejidos/">
                                         <img alt="Telas y tejidos" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/telas-y-tejidos.png" srcset="">
@@ -36,7 +36,7 @@ require_once 'clases/AES.php';
                                     <h2 class="title-col">Telas y tejidos</h2>
                                 </div>
                             </div>
-                            <div class="inner-column col">
+                            <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="/productos/tejidos/">
                                         <img alt="Fornituras textiles" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/fornituras.png" srcset="">
@@ -46,7 +46,7 @@ require_once 'clases/AES.php';
                                     <h2 class="title-col">Fornituras textiles</h2>
                                 </div>
                             </div>
-                            <div class="inner-column col">
+                            <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="/productos/tejidos/">
                                         <img alt="Embalaje textil" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/embalaje.png" srcset="">
@@ -56,7 +56,7 @@ require_once 'clases/AES.php';
                                     <h2 class="title-col">Embalaje textil</h2>
                                 </div>
                             </div>
-                            <div class="inner-column col">
+                            <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="/productos/tejidos/">
                                         <img alt="Etiquetaje" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/etiquetas.png" srcset="">
@@ -70,7 +70,7 @@ require_once 'clases/AES.php';
                     </section>
                     <section class="inner-section">
                         <div class="section-boxed">
-                            <div class="inner-column col">
+                            <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="/productos/tejidos/">
                                         <img alt="Herramientas textiles" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/utillaje.png" srcset="">
@@ -80,7 +80,7 @@ require_once 'clases/AES.php';
                                     <h2 class="title-col">Herramientas textiles</h2>
                                 </div>
                             </div>
-                            <div class="inner-column col">
+                            <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="/productos/tejidos/">
                                         <img alt="Marcaje textil" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/marcaje.png" srcset="">
@@ -90,7 +90,7 @@ require_once 'clases/AES.php';
                                     <h2 class="title-col">Marcaje textil</h2>
                                 </div>
                             </div>
-                            <div class="inner-column col">
+                            <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="/productos/tejidos/">
                                         <img alt="Maniquíes" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/maniquies.png" srcset="">
@@ -283,7 +283,7 @@ require_once 'clases/AES.php';
                     </div>
                     <div class="widget-button">
                         <div class="button-container">
-                            <a class="button-basic" href="" role="button">
+                            <a class="btn button-basic" href="" role="button">
                                 <span class="button-text">DESCÚBRELOS</span>
                             </a>
                         </div>
@@ -474,7 +474,7 @@ require_once 'clases/AES.php';
                         <div class="widget-button">
                             <div>
                                 <div class="button-container">
-                                    <a class="button-white size-sm" href="">
+                                    <a class="btn button-white size-sm" href="">
                                         <span class="button-content-wrapper">
                                             <span class="button-text">¡Conócenos!</span>
                                         </span>
@@ -486,7 +486,7 @@ require_once 'clases/AES.php';
                 </div>
             </div>
         </section>
-        <section class="section-carrusel">
+        <section class="section-tiendatelas">
             <div class="column-gap-default gap-max-width ">
                 <div class="widget-heading">
                     <div>
@@ -521,5 +521,3 @@ require_once 'clases/AES.php';
     require_once 'includes/footer.php';
     require_once 'includes/scripts.php';
     ?>
-    <!--Slick slider 1.8-->
-    <script src="js/slick-slider-config.js"></script>

@@ -101,7 +101,6 @@
   margin-top: 20px;
 }
 
-/* Estilos para las tarjetas */
 .dashboard-stats,
 .quick-links,
 .notifications,
@@ -109,7 +108,7 @@
 .useful-links,
 .custom-widgets,
 .site-stats {
-  flex: 1 1 calc(33.3333% - 20px); /* Distribuir en filas de 3 con espacio entre ellas */
+  flex: 1 1 calc(33.3333% - 20px); 
   margin: 10px;
   padding: 20px;
   background-color: #ffffff;
@@ -119,7 +118,6 @@
   transition: transform 0.3s ease;
 }
 
-/* Establece el ancho de las tarjetas en la primera fila */
 .dashboard-stats:nth-child(-n + 2) {
   flex-basis: calc(50% - 20px);
 }
@@ -137,7 +135,6 @@
   text-align: center;
 }
 
-/* Cambiar estilo al pasar el ratón sobre las tarjetas */
 .dashboard-stats:hover,
 .quick-links:hover,
 .notifications:hover,
@@ -149,7 +146,6 @@
   transform: scale(1.05);
 }
 
-/* Añadir estilos específicos para el contenido dentro de cada tarjeta si es necesario */
 .dashboard-stats p,
 .quick-links a,
 .notifications p,
@@ -183,13 +179,12 @@
   padding: 30px;
 }
 
-/* Estilos para las tarjetas de direcciones */
 .direccion-card {
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Espacio entre tarjetas */
+  margin-bottom: 20px;
   padding: 20px;
 }
 
@@ -202,5 +197,3 @@
 .direccion-card p {
   margin-bottom: 8px;
 }
-
-/* Estilos adicionales según sea necesario */
