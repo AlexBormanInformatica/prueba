@@ -1,5 +1,5 @@
 <?php
-include('admin-password.php');
+include('Admin-password.php');
 class AdminUser extends AdminPassword
 {
     private $_pdo;

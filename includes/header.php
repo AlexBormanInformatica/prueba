@@ -61,22 +61,31 @@ require_once 'css.php';
                                 </div>
                             </section>
                         </aside>
-                        <div data-bs-placement="bottom" class="header-cart d-inline-block" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="No hay productos en el carrito">
+                        <?php
+                        $totalProductos = 0;
+                        $totalCarrito = 0.00;
+                        foreach ($_SESSION['carrito'] as $producto) {
+                            $totalProductos += 1;
+                            $totalCarrito += 10;
+                        }
+                        ?>
+                        <div class="header-cart d-inline-block" >
                             <div class="cart-outline">
-                                <a href="cart" class="cart-container">
+                                <button class="button-cart" id="popover-carrito" data-bs-placement="bottom" data-bs-toggle="popover" data-bs-trigger=" focus" data-bs-content="">
                                     <div class="cart-wrap">
                                         <span class="cart-info-wrap">
-                                            <span class="cart-total"><span class="amount">0,00<span>€</span></span></span>
+                                            <span class="cart-total"><span class="amount"><?php echo number_format($totalCarrito, 2); ?><span>€</span></span></span>
                                         </span>
-                                        <i class="icon-shopping-cart" data-cart-total="0">
+                                        <i class="icon-shopping-cart" data-cart-total="<?php echo $totalProductos; ?>">
                                             <span class="icon icon-cart">
                                                 <img src="imagenes/cart.svg" alt="Icono de carrito">
                                             </span>
                                         </i>
                                     </div>
-                                </a>
+                                </button>
                             </div>
                         </div>
+
                         <div class="header-account">
                             <div class="header-account-wrap">
                                 <a class="header-account-link" aria-label="Enlace del icono de la cuenta" href="mi-cuenta" target="_self">

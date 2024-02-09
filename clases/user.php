@@ -1,5 +1,5 @@
 <?php
-include('password.php');
+include('Password.php');
 class User extends Password
 {
     private $_pdo;
@@ -47,10 +47,10 @@ class User extends Password
                         //Si no existe el usuario en pertex, creo el usuario
                         $sql = "INSERT INTO usuarios (correo, id_fichaempresameta) 
                         VALUES (?, ?)";
-                        $sentencia = $conn->prepare($sql);
-                        $sentencia->bindParam(1, $email, PDO::PARAM_STR);
-                        $sentencia->bindParam(2, $_SESSION['id_fichaempresameta'], PDO::PARAM_INT);
-                        $sentencia->execute();
+                        $query = $conn->prepare($sql);
+                        $query->bindParam(1, $email, PDO::PARAM_STR);
+                        $query->bindParam(2, $_SESSION['id_fichaempresameta'], PDO::PARAM_INT);
+                        $query->execute();
                         $_SESSION['ID'] = $conn->lastInsertId();
                     }
                     return true;

@@ -54,6 +54,10 @@ li {
   list-style: none outside;
 }
 
+.table > tbody {
+  vertical-align: middle;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -1455,5 +1459,25 @@ ul.products li.product a img {
 }
 
 .related.products {
-  margin-top: 50px;;
+  margin-top: 50px;
+}
+
+.popover {
+  font: inherit;
+  font-size: 16px;
+}
+
+.cart_list li img {
+  width: 4em;
+  height: 4em;
+  margin: 0 0 0.5em;
+}
+
+.button-cart {
+  border: none;
+  background: none;
+}
+
+.input-group {
+  width: 30%;
 }

@@ -41,3 +41,47 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// Función para generar un identificador único
+function generarIdUnico() {
+    return Math.random().toString(36).substring(2, 11); // Cambiado de 9 a 11 para incluir más caracteres
+}
+
+// Función para obtener el identificador único del usuario desde una cookie
+function obtenerIdUsuario() {
+    let idUsuario = getCookie("idUsuario");
+    if (!idUsuario) {
+        idUsuario = generarIdUnico();
+        // Guarda el identificador único en una cookie que expira en 30 días
+        setCookie("idUsuario", idUsuario, 30);
+    }
+    return idUsuario;
+}
+
+// Función para crear una cookie
+function setCookie(nombre, valor, dias) {
+    let fechaExpiracion = new Date();
+    fechaExpiracion.setTime(fechaExpiracion.getTime() + (dias * 24 * 60 * 60 * 1000));
+    let expiracion = "expires=" + fechaExpiracion.toUTCString();
+    document.cookie = nombre + "=" + valor + ";" + expiracion + ";path=/";
+}
+
+// Función para obtener el valor de una cookie
+function getCookie(nombre) {
+    let nombreCookie = nombre + "=";
+    let cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i];
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(nombreCookie) === 0) {
+            return cookie.substring(nombreCookie.length, cookie.length);
+        }
+    }
+    return "";
+}
+
+// Uso:
+let idUsuario = obtenerIdUsuario();
+console.log("Identificador único del usuario:", idUsuario);
