@@ -69,9 +69,9 @@ require_once 'css.php';
                             $totalCarrito += 10;
                         }
                         ?>
-                        <div class="header-cart d-inline-block" >
+                        <div class="header-cart d-inline-block">
                             <div class="cart-outline">
-                                <button class="button-cart" id="popover-carrito" data-bs-placement="bottom" data-bs-toggle="popover" data-bs-trigger=" focus" data-bs-content="">
+                                <a href="cart" >
                                     <div class="cart-wrap">
                                         <span class="cart-info-wrap">
                                             <span class="cart-total"><span class="amount"><?php echo number_format($totalCarrito, 2); ?><span>€</span></span></span>
@@ -82,7 +82,7 @@ require_once 'css.php';
                                             </span>
                                         </i>
                                     </div>
-                                </button>
+                                </a>
                             </div>
                         </div>
 
