@@ -29,7 +29,7 @@ require_once 'clases/AES.php';
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="tejidos">
-                                        <img alt="Telas y tejidos" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/telas-y-tejidos.png" srcset="">
+                                        <img alt="Telas y tejidos" src="imagenes/categorias/telas-y-tejidos.png">
                                     </a>
                                 </div>
                                 <div class="mb-20">
@@ -39,7 +39,7 @@ require_once 'clases/AES.php';
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="fornituras">
-                                        <img alt="Fornituras textiles" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/fornituras.png" srcset="">
+                                        <img alt="Fornituras textiles" src="imagenes/categorias/fornituras.png">
                                     </a>
                                 </div>
                                 <div class="mb-20">
@@ -49,7 +49,7 @@ require_once 'clases/AES.php';
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="embalaje">
-                                        <img alt="Embalaje textil" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/embalaje.png" srcset="">
+                                        <img alt="Embalaje textil" src="imagenes/categorias/embalaje.png">
                                     </a>
                                 </div>
                                 <div class="mb-20">
@@ -59,7 +59,7 @@ require_once 'clases/AES.php';
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="etiquetaje">
-                                        <img alt="Etiquetaje" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/etiquetas.png" srcset="">
+                                        <img alt="Etiquetaje" src="imagenes/categorias/etiquetas.png">
                                     </a>
                                 </div>
                                 <div class="mb-20">
@@ -73,7 +73,7 @@ require_once 'clases/AES.php';
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="utillaje">
-                                        <img alt="Herramientas textiles" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/utillaje.png" srcset="">
+                                        <img alt="Herramientas textiles" src="imagenes/categorias/utillaje.png">
                                     </a>
                                 </div>
                                 <div class="mb-20">
@@ -83,7 +83,7 @@ require_once 'clases/AES.php';
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="marcaje">
-                                        <img alt="Marcaje textil" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/marcaje.png" srcset="">
+                                        <img alt="Marcaje textil" src="imagenes/categorias/marcaje.png">
                                     </a>
                                 </div>
                                 <div class="mb-20">
@@ -93,7 +93,7 @@ require_once 'clases/AES.php';
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
                                     <a href="maniquies">
-                                        <img alt="Maniquíes" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/maniquies.png" srcset="">
+                                        <img alt="Maniquíes" src="imagenes/categorias/maniquies.png">
                                     </a>
                                 </div>
                                 <div class="mb-20">

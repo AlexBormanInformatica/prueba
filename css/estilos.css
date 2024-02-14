@@ -1300,7 +1300,7 @@ form.register label {
   margin: 0;
 }
 
-.label-color {
+.label-600 {
   font-weight: 600;
 }
 
@@ -1589,8 +1589,8 @@ a.remove {
   color: #777;
 }
 
-.itemNumber {
-  font-size: 0.7em;
+.cart-product-det {
+  font-size: 0.5em;
   margin: 0;
 }
 
@@ -1646,11 +1646,19 @@ footer address {
   left: 80% !important;
 }
 
+.categoria {
+  margin-bottom: 1em;
+}
+
+.categoria h1,
 h1.categoria {
   color: var(--color-primario);
   font-size: 40px;
   line-height: 56px;
-  margin-bottom: 1em;
+}
+
+.categoria p {
+  color: var(--color-primario);
 }
 
 :root {
@@ -1780,6 +1788,7 @@ h1.categoria {
   width: auto;
   display: flex;
   gap: 1em;
+  margin-bottom: 1em;
 }
 
 .product-links {
@@ -1788,14 +1797,22 @@ h1.categoria {
 
 .product-links a {
   display: inline-block;
-  margin-left: 5px;
-  color: #000;
+  margin-left: 15px;
+  color: #a5a5a5;
   transition: 0.3s;
   font-size: 17px;
 }
 
-.product-links a:hover {
+.product-links a:first-child {
   color: var(--color-boton);
+}
+
+.product-links a:hover:first-child {
+  color: var(--color-boton);
+}
+
+.product-links a:hover:nth-child(2) {
+  color: var(--color-primario);
 }
 
 .ba.price {
@@ -1805,7 +1822,7 @@ h1.categoria {
 
 .badge.stockStatus {
   position: absolute;
-  right: 0;
+  left: 0;
 }
 
 .badge.stockStatus.stock {

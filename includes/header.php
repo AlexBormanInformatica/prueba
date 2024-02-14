@@ -36,7 +36,7 @@ require_once 'css.php';
                             <div class="site-branding site-identity">
                                 <span>
                                     <a href="." rel="home">
-                                        <img alt="Logo Tienda de telas y fornituras" decoding="async" src="imagenes/cropped-LOGO-TELAS-Y-FORNITURAS-COLOR-1-3-168x119.png">
+                                        <img alt="Logo Tienda de telas y fornituras" src="imagenes/cropped-LOGO-TELAS-Y-FORNITURAS-COLOR-1-3-168x119.png">
                                     </a>
                                 </span>
                             </div>

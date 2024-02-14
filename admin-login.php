@@ -17,7 +17,7 @@ require_once 'clases/AES.php';
     ?>
 
 <body class="body-admin">
-    <button onclick="topFunction()" id="toTop" title="Go to top"> <img src="imagenes/angle-up.svg" alt="Icono flecha hacia arriba"> </button>
+    <button onclick="topFunction()" id="toTop" title="Go to top"> <img data-src="imagenes/angle-up.svg" class="lazyload" alt="Icono flecha hacia arriba"> </button>
     <div class="container-admin">
         <h1 class="text-center size-medium">Iniciar sesión</h1>
         <form action="verificar-login.php" method="POST">

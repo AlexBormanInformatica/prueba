@@ -44,7 +44,7 @@
 
                 <h2 class="entry-title">Gastos de envío y condiciones de transporte.</h2>
                 <p>Los gastos de envío dependerán del importe de la mercancía como quedan registrados en las siguientes tablas:</p>
-                <img src="imagenes/Previos-envio-1024x841.jpg" />
+                <img data-src="imagenes/Previos-envio-1024x841.jpg" class="lazyload" />
                 <p><strong>*</strong>Ceuta y melilla: por cada envío se cobrará un suplemento por “gestión de Dua” con valor 20,50€.<br><strong>*</strong>Canarias: los envíos de mercancía con valor superior a 3.000 € se cobrará “gestión de Dua” con valor 20,50€.</p>
                 <p><strong>Importante: </strong>Para exportaciones a países fuera de la comunidad económica europea y Canarias existen costes por trámites aduaneros tanto en origen como destino de los que no nos hacemos cargo, por dicho motivo no se cobran ningún tipo de impuesto en los productos.</p>
 

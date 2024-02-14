@@ -26,7 +26,7 @@ require_once 'clases/AES.php';
             <p>– Para otros destinos contactar con nuestro departamento de ventas escribiendo a ventas@tiendadetelasyfornituras.com.</p>
             <p>Los plazos indicados no incluyen las demoras por trámites aduaneros, tanto en origen como destino.</p>
             <p>Cualquiera que fuera el retraso en la entrega de mercancía no será motivo de reclamación alguna a Borman Industria Textil SL.</p>
-            <img src="imagenes/Previos-envio-1024x841.jpg" />
+            <img data-src="imagenes/Previos-envio-1024x841.jpg" class="lazyload" />
             <p><strong>Gastos de envío y condiciones de transporte.</strong></p>
             <p>Los gastos de envío dependerán del importe de la mercancía como quedan registrados en las siguientes tablas:</p>
             <p><strong>*</strong>Ceuta y melilla: por cada envío se cobrará un suplemento por “gestión de Dua” con valor 20,50€.<br><strong>*</strong>Canarias: los envíos de mercancía con valor superior a 3.000 € se cobrará “gestión de Dua” con valor 20,50€.</p>

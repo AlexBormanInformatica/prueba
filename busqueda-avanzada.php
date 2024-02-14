@@ -41,6 +41,8 @@ require_once 'clases/AES.php';
             if (isset($parametros['tejido'])) {
                 $tejido = $parametros['tejido'];
             }
+            $i = 131;
+            $c = 0;
         }
         ?>
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
@@ -50,51 +52,98 @@ require_once 'clases/AES.php';
                 <li class="breadcrumb-item text-capitalize active" aria-current="page"><?= $tejido ?></li>
             </ol>
         </nav>
-        <h1 class="categoria text-capitalize">Tejidos - <?= $tejido ?></h1>
+        <div class="categoria">
+            <h1 class="text-capitalize">Tejidos - <?= $tejido ?></h1>
+            <p class="">Mostrando <?= $i ?> producto<?= $i > 1 ? "s" : "" ?></p>
+        </div>
 
         <div class="busqueda-avanzada">
             <select class="form-select" aria-label="">
-                <option selected>CATEGORIA</option>
-                <option value="1">Técnico</option>
-                <option value="2">Canalé</option>
-                <option value="3">Polar</option>
-                <option value="4">Felpa</option>
-                <option value="5">Acetato</option>
-                <option value="6">Liso</option>
-                <option value="7">Granito</option>
+                <option class="text-uppercase" selected>SECTOR</option>
+                <option class="text-uppercase" value="1">CAMISETAS</option>
+                <option class="text-uppercase" value="2">CAMISETAS MUJER</option>
+                <option class="text-uppercase" value="3">POLOS</option>
+                <option class="text-uppercase" value="4">SUDADERAS</option>
+                <option class="text-uppercase" value="5">FORRO POLAR</option>
+                <option class="text-uppercase" value="6">SOFTSHELL</option>
+                <option class="text-uppercase" value="7">EQUIPACIÓN FÚTBOL</option>
+                <option class="text-uppercase" value="8">EQUIPACIÓN BALONCESTO</option>
+                <option class="text-uppercase" value="9">MAILLOT CICLISMO</option>
+                <option class="text-uppercase" value="10">CULOTE CICLISMO</option>
+                <option class="text-uppercase" value="11">GIMNASIA RÍTMICA</option>
+                <option class="text-uppercase" value="12">CHÁNDAL</option>
+                <option class="text-uppercase" value="13">ABRIGOS</option>
+                <option class="text-uppercase" value="14">ROPA DE LLUVIA</option>
+                <option class="text-uppercase" value="15">PANTALÓN DE TREKKING</option>
+                <option class="text-uppercase" value="16">RUNNER</option>
+                <option class="text-uppercase" value="17">POLICÍA</option>
+                <option class="text-uppercase" value="18">FALDA</option>
+                <option class="text-uppercase" value="19">CAMISAS</option>
+                <option class="text-uppercase" value="20">TRAJE DE VESTIR</option>
+                <option class="text-uppercase" value="21">UNIFORMES DE AZAFATA</option>
+                <option class="text-uppercase" value="22">UNIFORMES DE PILOTO</option>
+                <option class="text-uppercase" value="23">UNIFORME LABORAL</option>
+                <option class="text-uppercase" value="24">BATAS</option>
+                <option class="text-uppercase" value="25">UNIFORMES DE ENFERMERA</option>
+                <option class="text-uppercase" value="26">ALTA VISIBILIDAD</option>
+                <option class="text-uppercase" value="27">VIGILANTE DE SEGURIDAD</option>
+                <option class="text-uppercase" value="28">MALLAS</option>
+                <option class="text-uppercase" value="29">MOCHILAS DE GIMNASIO</option>
+                <option class="text-uppercase" value="30">GORRAS</option>
+                <option class="text-uppercase" value="31">COCINERO</option>
+                <option class="text-uppercase" value="32">DELANTAL</option>
+                <option class="text-uppercase" value="33">MOCHILAS</option>
+                <option class="text-uppercase" value="34">TOALLAS DE BAÑO</option>
+                <option class="text-uppercase" value="35">ALBORNOCES DE MICROFIBRA</option>
+                <option class="text-uppercase" value="36">MANTA DE BEBÉ</option>
+                <option class="text-uppercase" value="37">MASCARILLAS</option>
+                <option class="text-uppercase" value="38">TAPICERÍA</option>
+                <option class="text-uppercase" value="39">COLCHONES</option>
+                <option class="text-uppercase" value="40">CORSETERÍA</option>
+                <option class="text-uppercase" value="41">BAÑADORES</option>
+                <option class="text-uppercase" value="42">DISFRACES</option>
             </select>
 
             <select class="form-select" aria-label="">
-                <option selected>SUBCATEGORIA</option>
-                <option value="1">Interlock</option>
-                <option value="2">Calado</option>
-                <option value="3">Piqué</option>
-                <option value="4">Granito técnico</option>
-                <option value="5">Gofrado técnico</option>
-                <option value="6">Ladillado</option>
-                <option value="7">Microrejilla</option>
-                <option value="7">Perchado</option>
-                <option value="7">Cuadrille</option>
-                <option value="7">Hexagonal</option>
-                <option value="7">Liso técnico</option>
-                <option value="7">Micro-calado</option>
-                <option value="7">Micro-perforado</option>
-                <option value="7">Tubular</option>
-                <option value="7">Webenit</option>
+                <option class="text-uppercase" selected>CATEGORIA</option>
+                <option class="text-uppercase" value="1">Técnico</option>
+                <option class="text-uppercase" value="2">Canalé</option>
+                <option class="text-uppercase" value="3">Polar</option>
+                <option class="text-uppercase" value="4">Felpa</option>
+                <option class="text-uppercase" value="5">Acetato</option>
+                <option class="text-uppercase" value="6">Liso</option>
+                <option class="text-uppercase" value="7">Granito</option>
+            </select>
+
+            <select class="form-select" aria-label="">
+                <option class="text-uppercase" selected>SUBCATEGORIA</option>
+                <option class="text-uppercase" value="1">Interlock</option>
+                <option class="text-uppercase" value="2">Calado</option>
+                <option class="text-uppercase" value="3">Piqué</option>
+                <option class="text-uppercase" value="4">Granito técnico</option>
+                <option class="text-uppercase" value="5">Gofrado técnico</option>
+                <option class="text-uppercase" value="6">Ladillado</option>
+                <option class="text-uppercase" value="7">Microrejilla</option>
+                <option class="text-uppercase" value="8">Perchado</option>
+                <option class="text-uppercase" value="9">Cuadrille</option>
+                <option class="text-uppercase" value="10">Hexagonal</option>
+                <option class="text-uppercase" value="11">Liso técnico</option>
+                <option class="text-uppercase" value="12">Micro-calado</option>
+                <option class="text-uppercase" value="13">Micro-perforado</option>
+                <option class="text-uppercase" value="14">Tubular</option>
+                <option class="text-uppercase" value="15">Webenit</option>
             </select>
         </div>
 
         <div class="product-container">
             <ul class="row products">
                 <?php
-                $i = 131;
-                $c = 0;
                 while ($c < $i) {
                 ?>
                     <li class="col product">
                         <a href="producto?id=1" class="loop-product__link">
                             <span class="badge stockStatus stock">Disponible</span>
-                            <div class=""><a href="producto?id=1"><img data-src="imagenes/carrusel/BOTEPUTCKAN1000353.jpg" class="lazyload" /></a></div>
+                            <div class=""><a href="producto?id=1"><img <?= $c > 10 ? 'data-src="imagenes/carrusel/BOTEPUTCKAN1000353.jpg" class="lazyload"' : 'src="imagenes/carrusel/BOTEPUTCKAN1000353.jpg"' ?> /></a></div>
                             <div class="summary-wrap">
                                 <span class="product-category">
                                     Felpa

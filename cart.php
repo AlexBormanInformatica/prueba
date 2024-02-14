@@ -19,7 +19,7 @@ require_once 'clases/AES.php';
         <main>
             <div class="cf">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="heading cf">
                             <h1 class="entry-title">Carrito</h1>
                             <!-- <div class="button-container cart-button">
@@ -56,150 +56,42 @@ require_once 'clases/AES.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="items">
-                                                <td class="cartSection">
-                                                    <a href="#" class="remove">x</a>
-                                                </td>
-                                                <td class="cartSection" colspan="2" data-label="Producto">
-                                                    <a href="producto" class="imageAndText">
-                                                        <img src="imagenes/carrusel/BOTECADUNAN1500314.jpg" alt="" class="itemImg" />
-                                                        <div class="textSection">
-                                                            <p class="itemNumber">SKU: COTECADUN</p>
-                                                            <p class="cart-product-title">DUNCAN</p>
-                                                            <p class="stockStatus stock">DISPONIBLE</p>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="cartSection" data-label="Cantidad">
-                                                    <input type="text" class="qty form-control" value="1" />
-                                                </td>
-                                                <td data-label="Precio">
-                                                    <span class="amount"> 5,00€ </span>
-                                                </td>
-                                                <td class="cartSection" data-label="Subtotal">
-                                                    <span class="subtotal-producto"> 15,00€ </span>
-                                                </td>
-                                            </tr>
-                                            <tr class="items">
-                                                <td class="cartSection">
-                                                    <a href="#" class="remove">x</a>
-                                                </td>
-                                                <td class="cartSection" colspan="2" data-label="Producto">
-                                                    <a href="producto" class="imageAndText">
-                                                        <img src="imagenes/carrusel/BOTECASEVAN1500336.jpg" alt="" class="itemImg" />
-                                                        <div class="textSection">
-                                                            <p class="itemNumber">SKU: BOTECASEV</p>
-                                                            <p class="cart-product-title">SEVILLA</p>
-                                                            <p class="stockStatus no-stock">AGOTADO</p>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="cartSection" data-label="Cantidad">
-                                                    <input type="text" class="qty form-control" value="1" />
-                                                </td>
-                                                <td data-label="Precio">
-                                                    <span class="amount"> 5,00€ </span>
-                                                </td>
-                                                <td class="cartSection" data-label="Subtotal">
-                                                    <span class="subtotal-producto"> 15,00€ </span>
-                                                </td>
-                                            </tr>
-                                            <tr class="items">
-                                                <td class="cartSection">
-                                                    <a href="#" class="remove">x</a>
-                                                </td>
-                                                <td class="cartSection" colspan="2" data-label="Producto">
-                                                    <a href="producto" class="imageAndText">
-                                                        <img src="imagenes/carrusel/BOTECADUNAN1500314.jpg" alt="" class="itemImg" />
-                                                        <div class="textSection">
-                                                            <p class="itemNumber">SKU: COTECADUN</p>
-                                                            <p class="cart-product-title">DUNCAN</p>
-                                                            <p class="stockStatus stock">DISPONIBLE</p>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="cartSection" data-label="Cantidad">
-                                                    <input type="text" class="qty form-control" value="1" />
-                                                </td>
-                                                <td data-label="Precio">
-                                                    <span class="amount"> 5,00€ </span>
-                                                </td>
-                                                <td class="cartSection" data-label="Subtotal">
-                                                    <span class="subtotal-producto"> 15,00€ </span>
-                                                </td>
-                                            </tr>
-                                            <tr class="items">
-                                                <td class="cartSection">
-                                                    <a href="#" class="remove">x</a>
-                                                </td>
-                                                <td class="cartSection" colspan="2" data-label="Producto">
-                                                    <a href="producto" class="imageAndText">
-                                                        <img src="imagenes/carrusel/BOTECASEVAN1500336.jpg" alt="" class="itemImg" />
-                                                        <div class="textSection">
-                                                            <p class="itemNumber">SKU: BOTECASEV</p>
-                                                            <p class="cart-product-title">SEVILLA</p>
-                                                            <p class="stockStatus no-stock">AGOTADO</p>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="cartSection" data-label="Cantidad">
-                                                    <input type="text" class="qty form-control" value="1" />
-                                                </td>
-                                                <td data-label="Precio">
-                                                    <span class="amount"> 5,00€ </span>
-                                                </td>
-                                                <td class="cartSection" data-label="Subtotal">
-                                                    <span class="subtotal-producto"> 15,00€ </span>
-                                                </td>
-                                            </tr>
-                                            <tr class="items">
-                                                <td class="cartSection">
-                                                    <a href="#" class="remove">x</a>
-                                                </td>
-                                                <td class="cartSection" colspan="2" data-label="Producto">
-                                                    <a href="producto" class="imageAndText">
-                                                        <img src="imagenes/carrusel/BOTECADUNAN1500314.jpg" alt="" class="itemImg" />
-                                                        <div class="textSection">
-                                                            <p class="itemNumber">SKU: COTECADUN</p>
-                                                            <p class="cart-product-title">DUNCAN</p>
-                                                            <p class="stockStatus stock">DISPONIBLE</p>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="cartSection" data-label="Cantidad">
-                                                    <input type="text" class="qty form-control" value="1" />
-                                                </td>
-                                                <td data-label="Precio">
-                                                    <span class="amount"> 5,00€ </span>
-                                                </td>
-                                                <td class="cartSection" data-label="Subtotal">
-                                                    <span class="subtotal-producto"> 15,00€ </span>
-                                                </td>
-                                            </tr>
-                                            <tr class="items">
-                                                <td class="cartSection">
-                                                    <a href="#" class="remove">x</a>
-                                                </td>
-                                                <td class="cartSection" colspan="2" data-label="Producto">
-                                                    <a href="producto" class="imageAndText">
-                                                        <img src="imagenes/carrusel/BOTECASEVAN1500336.jpg" alt="" class="itemImg" />
-                                                        <div class="textSection">
-                                                            <p class="itemNumber">SKU: BOTECASEV</p>
-                                                            <p class="cart-product-title">SEVILLA</p>
-                                                            <p class="stockStatus no-stock">AGOTADO</p>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="cartSection" data-label="Cantidad">
-                                                    <input type="text" class="qty form-control" value="1" />
-                                                </td>
-                                                <td data-label="Precio">
-                                                    <span class="amount"> 5,00€ </span>
-                                                </td>
-                                                <td class="cartSection" data-label="Subtotal">
-                                                    <span class="subtotal-producto"> 15,00€ </span>
-                                                </td>
-                                            </tr>
+                                            <?php
+                                            $i = 1;
+                                            $c = 0;
+                                            while ($c < $i) {
+                                            ?>
+                                                <tr class="items">
+                                                    <td class="cartSection">
+                                                        <a href="#" class="remove">x</a>
+                                                    </td>
+                                                    <td class="cartSection" colspan="2" data-label="Producto">
+                                                        <a href="producto" class="imageAndText">
+                                                            <div style="position:relative;">
+                                                                <span class="badge stockStatus no-stock">Agotado</span>
+                                                                <img src="imagenes/carrusel/BOTECADUNAN1500314.jpg" alt="" class="itemImg" />
+                                                            </div>
+                                                            <div class="textSection">
+                                                                <p class="cart-product-title">DUNCAN</p>
+                                                                <p class="cart-product-det">Verde Kelly (353)</p>
+                                                                <p class="cart-product-det">850 mm</p>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td class="cartSection" data-label="Cantidad">
+                                                        <input type="text" class="qty form-control" value="1" />
+                                                    </td>
+                                                    <td data-label="Precio">
+                                                        <span class="amount"> 5,00€ </span>
+                                                    </td>
+                                                    <td class="cartSection" data-label="Subtotal">
+                                                        <span class="subtotal-producto"> 15,00€ </span>
+                                                    </td>
+                                                </tr>
+                                            <?php
+                                                $c++;
+                                            }
+                                            ?>
                                         </tbody>
                                     </table>
                                 </form>

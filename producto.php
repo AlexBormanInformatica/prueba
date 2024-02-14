@@ -44,7 +44,7 @@ require_once 'clases/AES.php';
                             <p class="product-details__short-description">Hilo de coser TULPAC</p>
 
                             <form class="form-cart" action="DAO/agregar-carrito.php" method="post" enctype="multipart/form-data">
-                                <label class="form-label label-color" for="pa_color">Color<span class="selected-variation-item-name"></span></label>
+                                <label class="form-label label-600" for="pa_color">Color<span class="selected-variation-item-name"></span></label>
                                 <div class="color-boxes">
                                     <div class="color-box" data-bs-placement="top" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Amarillo Flúor (553)">
                                         <img src="imagenes/colores/Amarillo-Fluor-553.jpg" alt="Amarillo Flúor (553)">
@@ -130,6 +130,10 @@ require_once 'clases/AES.php';
                                         <img src="imagenes/colores/Violeta-Uva-158.jpg" alt="Violeta Uva (158)">
                                         <span></span>
                                     </div>
+                                </div>
+                                <label class="form-label label-600" for="pa_color">Color<span class="selected-variation-item-name"></span></label>
+                                <div>
+
                                 </div>
                                 <div class="single_variation_wrap">
                                     <div class="variation single_variation" style="display: none;">
