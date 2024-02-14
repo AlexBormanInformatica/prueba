@@ -416,6 +416,7 @@ img.emoji {
 }
 
 .product {
+  position: relative;
   width: 209px;
   text-align: left;
   overflow: hidden;
@@ -1201,37 +1202,7 @@ form.register label {
 }
 
 .modal {
-  /* --bs-modal-zindex: 1055; */
   --bs-modal-width: 1000px;
-  /* --bs-modal-padding: 1rem;
-  --bs-modal-margin: 0.5rem;
-  --bs-modal-color: ;
-  --bs-modal-bg: #fff;
-  --bs-modal-border-color: var(--bs-border-color-translucent);
-  --bs-modal-border-width: 1px;
-  --bs-modal-border-radius: 0.5rem;
-  --bs-modal-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  --bs-modal-inner-border-radius: calc(0.5rem - 1px);
-  --bs-modal-header-padding-x: 1rem;
-  --bs-modal-header-padding-y: 1rem;
-  --bs-modal-header-padding: 1rem 1rem;
-  --bs-modal-header-border-color: var(--bs-border-color);
-  --bs-modal-header-border-width: 1px;
-  --bs-modal-title-line-height: 1.5;
-  --bs-modal-footer-gap: 0.5rem;
-  --bs-modal-footer-bg: ;
-  --bs-modal-footer-border-color: var(--bs-border-color);
-  --bs-modal-footer-border-width: 1px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--bs-modal-zindex);
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  outline: 0; */
 }
 
 .summary-content span.price {
@@ -1590,7 +1561,6 @@ a.remove {
   top: 15px;
   width: 35%;
   height: 50%;
-  z-index: 1000;
   background: #fafafa;
   padding: 10px;
   display: flex;
@@ -1660,4 +1630,190 @@ a.remove {
 
 .totalRow .button-container {
   margin: 0;
+}
+
+footer li,
+footer a,
+footer address {
+  font-size: 16px;
+}
+
+.breadcrumb-item.active {
+  background-color: #fff;
+}
+
+.start-100 {
+  left: 80% !important;
+}
+
+h1.categoria {
+  color: var(--color-primario);
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 1em;
+}
+
+:root {
+  --curve: 10;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: #ffffffe0;
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 10px;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: #ffffffe0;
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+  justify-content: center;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: #ffffffe0;
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.card__title {
+  font-size: 1em;
+  color: var(--color-primario);
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-size: 0.8em;
+  color: #342a2b;
+}
+
+.card__status {
+  font-size: 0.8em;
+  color: #342a2b;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #342a2b;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: inherit;
+}
+
+.product-container .products .product {
+  flex: 1 1 calc(33.3333% - 20px);
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-container .products .summary-wrap {
+  padding: 0;
+}
+
+.busqueda-avanzada {
+  width: auto;
+  display: flex;
+  gap: 1em;
+}
+
+.product-links {
+  text-align: right;
+}
+
+.product-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #000;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.product-links a:hover {
+  color: var(--color-boton);
+}
+
+.ba.price {
+  color: #3a3a3a;
+  font-size: 15px;
+}
+
+.badge.stockStatus {
+  position: absolute;
+  right: 0;
+}
+
+.badge.stockStatus.stock {
+  background-color: #71aa6f;
+  color: #fff;
+}
+
+.badge.stockStatus.no-stock {
+  background-color: #c25050;
+  color: #fff;
 }

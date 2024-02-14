@@ -28,7 +28,7 @@ require_once 'clases/AES.php';
                         <div class="section-boxed">
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
-                                    <a href="/productos/tejidos/">
+                                    <a href="tejidos">
                                         <img alt="Telas y tejidos" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/telas-y-tejidos.png" srcset="">
                                     </a>
                                 </div>
@@ -38,7 +38,7 @@ require_once 'clases/AES.php';
                             </div>
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
-                                    <a href="/productos/tejidos/">
+                                    <a href="fornituras">
                                         <img alt="Fornituras textiles" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/fornituras.png" srcset="">
                                     </a>
                                 </div>
@@ -48,7 +48,7 @@ require_once 'clases/AES.php';
                             </div>
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
-                                    <a href="/productos/tejidos/">
+                                    <a href="embalaje">
                                         <img alt="Embalaje textil" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/embalaje.png" srcset="">
                                     </a>
                                 </div>
@@ -58,7 +58,7 @@ require_once 'clases/AES.php';
                             </div>
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
-                                    <a href="/productos/tejidos/">
+                                    <a href="etiquetaje">
                                         <img alt="Etiquetaje" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/etiquetas.png" srcset="">
                                     </a>
                                 </div>
@@ -72,7 +72,7 @@ require_once 'clases/AES.php';
                         <div class="section-boxed">
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
-                                    <a href="/productos/tejidos/">
+                                    <a href="utillaje">
                                         <img alt="Herramientas textiles" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/utillaje.png" srcset="">
                                     </a>
                                 </div>
@@ -82,7 +82,7 @@ require_once 'clases/AES.php';
                             </div>
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
-                                    <a href="/productos/tejidos/">
+                                    <a href="marcaje">
                                         <img alt="Marcaje textil" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/marcaje.png" srcset="">
                                     </a>
                                 </div>
@@ -92,7 +92,7 @@ require_once 'clases/AES.php';
                             </div>
                             <div class="inner-column col element-populated">
                                 <div class="mb-20">
-                                    <a href="/productos/tejidos/">
+                                    <a href="maniquies">
                                         <img alt="Maniquíes" decoding="async" data-srcset="" data-src="" src="imagenes/categorias/maniquies.png" srcset="">
                                     </a>
                                 </div>

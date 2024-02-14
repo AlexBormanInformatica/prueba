@@ -71,7 +71,11 @@ require_once 'css.php';
                         ?>
                         <div class="header-cart d-inline-block">
                             <div class="cart-outline">
-                                <a href="cart" >
+                                <a href="cart">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        4
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
                                     <div class="cart-wrap">
                                         <span class="cart-info-wrap">
                                             <span class="cart-total"><span class="amount"><?php echo number_format($totalCarrito, 2); ?><span>€</span></span></span>
