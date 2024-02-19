@@ -82,10 +82,10 @@ require_once 'clases/AES.php';
                                                         <input type="text" class="qty form-control" value="1" />
                                                     </td>
                                                     <td data-label="Precio">
-                                                        <span class="amount"> 5,00€ </span>
+                                                        <span class="amount"> 10,00€ </span>
                                                     </td>
                                                     <td class="cartSection" data-label="Subtotal">
-                                                        <span class="subtotal-producto"> 15,00€ </span>
+                                                        <span class="subtotal-producto"> 10,00€ </span>
                                                     </td>
                                                 </tr>
                                             <?php
@@ -101,10 +101,10 @@ require_once 'clases/AES.php';
 
                     <div class="subtotal cf col">
                         <ul>
-                            <li class="totalRow"><span class="label">Subtotal</span><span class="value">35,00€</span></li>
+                            <li class="totalRow"><span class="label">Subtotal</span><span class="value">10,00€</span></li>
                             <li class="totalRow"><span class="label">Envío</span><span class="value">5,00€</span></li>
                             <li class="totalRow"><span class="label">IVA 21%</span><span class="value">4,00€</span></li>
-                            <li class="totalRow final"><span class="label">Total</span><span class="value">44,00€</span></li>
+                            <li class="totalRow final"><span class="label">Total</span><span class="value">19,00€</span></li>
                             <li class="totalRow">
                                 <div class="button-container">
                                     <a href="#" class="btn button-basic">Finalizar compra</a>

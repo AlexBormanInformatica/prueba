@@ -78,4 +78,6 @@ if ($_SESSION['idCarrito']) {
 
   // Guardar los productos del carrito en la sesión
   $_SESSION['carrito'] = $productosCarrito;
+} else {
+  $_SESSION['carrito'] = [1];
 }

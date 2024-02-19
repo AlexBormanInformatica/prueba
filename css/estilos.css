@@ -1784,11 +1784,21 @@ h1.categoria {
   padding: 0;
 }
 
+.ba.flex {
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 1em;
+}
+
 .busqueda-avanzada {
-  width: auto;
   display: flex;
   gap: 1em;
   margin-bottom: 1em;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-links {
@@ -1833,4 +1843,26 @@ h1.categoria {
 .badge.stockStatus.no-stock {
   background-color: #c25050;
   color: #fff;
+}
+
+a.tag {
+  border: 1px solid #acabab;
+  color: #acabab;
+  border-radius: 4px;
+  padding: 0 0.5em;
+  font-size: 0.7em;
+  letter-spacing: 0.15ch;
+  font-weight: 400;
+  height: 20px;
+}
+
+ul.products li.product .tags {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+ul.products li.product .tags a.tag {
+  display: inline-flex; 
+  align-items: center; 
+  margin:0 0.5em 0 0; 
 }

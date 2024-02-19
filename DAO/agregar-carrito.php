@@ -6,10 +6,10 @@ $mensaje = "";
 
 if (isset($_POST["product_id"]) && isset($_POST["quantity"]) && isset($_POST["color"]) && isset($_POST["talla"])) {
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-        agregarAlCarritoUsuarioAutenticado(obtenerConexion_pertex());
+        agregarAlCarritoUsuarioAutenticado(obtenerConexion_tienda());
     } else {
         $idUsuario = 0;
-        agregarAlCarritoUsuarioNoAutenticado($idUsuario, obtenerConexion_pertex());
+        agregarAlCarritoUsuarioNoAutenticado($idUsuario, obtenerConexion_tienda());
     }
 } else {
     $mensaje = "Error: Falta información del producto.";
